@@ -46,6 +46,15 @@ print("STD:\t\t", name4)
 print("Sec:\t\t", name5)
 print("Date:\t\t", name6)
 
+def clear(win):
+    for item in win.items[:]:
+        item.undraw()
+    win.update()
+
+clear(win)
+
+Text(Point(3, 3), "Your response has been submitted").draw(win)
 
 win.getMouse()
 win.close()
+
