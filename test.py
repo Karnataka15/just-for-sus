@@ -16,6 +16,7 @@ name1 = name.getText()
 
 Text(Point(0.47, 4), "DOB: ").draw(win)
 DOB = Entry(Point(1.5, 4), 10).draw(win)
+DOB.setText("dd/mm/yyyy")
 win.getMouse()
 name2 = DOB.getText()
 
